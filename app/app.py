@@ -25,7 +25,6 @@ from model import generate_gradcam, get_last_conv_layer, overlay_gradcam
 
 MODEL_PATH = "../models/pneumonia_densenet121_finetuned.keras"
 
-# Actual benchmark results from training (see ../models/model_comparison.csv)
 BENCHMARK_RESULTS = pd.DataFrame({
     "Model": ["DenseNet121", "EfficientNetB0", "MobileNetV2", "CNN (custom)"],
     "Accuracy": [0.867, 0.864, 0.841, 0.699],
